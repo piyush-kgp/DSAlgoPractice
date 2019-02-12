@@ -17,9 +17,9 @@ class Solution:
             A.append(head.val)
             head = head.next
         A.sort()
-        mylist = ListNode(A[0])
+        mylist = ListNode(None)
         curr = mylist
-        for a in A[1:]:
+        for a in A:
             curr.next = ListNode(a)
             curr = curr.next
-        return mylist
+        return mylist.next
